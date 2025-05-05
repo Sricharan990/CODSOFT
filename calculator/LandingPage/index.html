@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoCore - Sustainable Innovation</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    /* Header with Gradient */
+    header {
+      background: linear-gradient(to right, #1f1f3c, #3f3f80);
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      float: left;
+      margin-left: 5%;
+    }
+
+    nav {
+      float: right;
+      margin-right: 5%;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    header::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Hero Section with Gradient */
+    .hero {
+      background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: linear-gradient(to right, #5c6bc0, #8e24aa);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: linear-gradient(to right, #3949ab, #7b1fa2);
+    }
+
+    /* Features */
+    .features h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .grid {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      flex: 1 1 30%;
+      background: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .feature-box h3 {
+      color: #90caf9;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      color: #cccccc;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      background: #242424;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .pricing h2 {
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .pricing .pricing-tiers {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1400px; /* Extended container width */
+      margin: 0 auto;
+    }
+
+    .pricing-tier {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 30px;
+      width: 48%; /* Increased width for two columns */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #ffffff;
+    }
+
+    .pricing-tier h3 {
+      color: #90caf9;
+      margin-bottom: 20px;
+    }
+
+    .pricing-tier .price {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #8e24aa;
+    }
+
+    .pricing-tier ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pricing-tier ul li {
+      color: #cccccc;
+      margin: 10px 0;
+    }
+
+    .pricing-tier .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: linear-gradient(to right, #5c6bc0, #8e24aa);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .pricing-tier .btn:hover {
+      background: linear-gradient(to right, #3949ab, #7b1fa2);
+    }
+
+    /* About */
+    .about {
+      background: #242424;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about h2 {
+      color: #ffffff;
+    }
+
+    .about p {
+      color: #cccccc;
+    }
+
+    /* Footer with Gradient */
+    footer {
+      background: linear-gradient(to right, #1a237e, #4a148c);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid, .pricing-tiers {
+        flex-direction: column;
+      }
+
+      nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      header h1, nav {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>EcoCore</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Revolutionizing Sustainability with Smart Tech</h2>
+      <p>EcoCore delivers eco-friendly solutions for a cleaner, smarter planet.</p>
+      <a class="btn" href="#pricing">View Pricing</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <div class="grid">
+        <div class="feature-box">
+          <h3>Recyclable Materials</h3>
+          <p>Our products are made from 95% recycled materials to reduce waste.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Energy Efficiency</h3>
+          <p>EcoCore systems minimize energy usage across industrial sectors.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Smart Monitoring</h3>
+          <p>Real-time data for sustainable performance tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+      <div class="pricing-tiers">
+        <div class="pricing-tier">
+          <h3>Starter</h3>
+          <div class="price">$19/month</div>
+          <ul>
+            <li>Access to Basic Features</li>
+            <li>1 User Account</li>
+            <li>Email Support</li>
+          </ul>
+          <a class="btn" href="#">Get Started</a>
+        </div>
+        <div class="pricing-tier">
+          <h3>Premium</h3>
+          <div class="price">$99/month</div>
+          <ul>
+            <li>Access to Premium Features</li>
+            <li>Unlimited User Accounts</li>
+            <li>24/7 Support</li>
+          </ul>
+          <a class="btn" href="#">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About EcoCore</h2>
+      <p>We are a team of engineers and environmentalists dedicated to developing scalable technologies that combat climate change and promote sustainable industry practices.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EcoCore. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
